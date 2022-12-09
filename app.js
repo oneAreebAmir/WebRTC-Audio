@@ -20,17 +20,6 @@ async function start_audio(){
     }
 
     media_Track = media_Stream.getAudioTracks()[0];
-
-    media_Track.onmute = function (e) {
-        console.log(e);
-    }
-    media_Track.onunmute = function (e) {
-        console.log(e);
-    }
-    media_Stream.getAudioTracks().forEach(track => {
-        console.log(track);
-    })
-
 }
 
 function EventBindAudio(){
